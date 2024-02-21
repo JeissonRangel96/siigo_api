@@ -3,7 +3,10 @@ public with sharing class ProductConsumer {
     public ProductConsumer() {
     }
 
-    public void registrarProductos(){
+    @InvocableMethod(label='Metodo para actualizar inventario'
+                     description='Hace lo que dice el nombre'
+                     category='Product2')
+    public static void registrarProductos(){
 
         RequestBuilder request = new RequestBuilder(ProductConstants.ENDPOINT);
 
