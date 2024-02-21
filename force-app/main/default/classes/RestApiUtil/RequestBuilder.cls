@@ -4,7 +4,7 @@ public with sharing class RequestBuilder {
     private String method;
     private Map<String, String> headers;
 
-    public RequestBuilder() {
+    public RequestBuilder(String apiUrl) {
         this.apiUrl = apiUrl;
         this.headers = new Map<String, String>();
     }
